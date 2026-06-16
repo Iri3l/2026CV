@@ -58,18 +58,6 @@ a:hover {
     gap: 3rem;
 }
 
-@media (max-width: 992px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
-    
-    .sidebar {
-        position: relative;
-        top: 0;
-        z-index: 10;
-        margin-bottom: 2rem;
-    }
-}
 
 /* Glass Card Reusable Class */
 .glass-card {
@@ -509,4 +497,18 @@ section {
 textarea.form-control {
     min-height: 150px;
     resize: vertical;
+}
+
+/* Mobile Overrides */
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        position: relative;
+        top: 0;
+        z-index: 10;
+        margin-bottom: 2rem;
+    }
 }
