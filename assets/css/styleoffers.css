@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Exo|Roboto&display=swap:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/* .........  Offfer Page ........ */
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/pexels.jpg);
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    color: #fff !important
+}
+
+.offers {
+    margin: 90px auto;
+    text-align: center;
+    margin-top: 5%;
+}
+
+h2 {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    content:'';
+    background: white;
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin: 10px auto;
+}
+
+.icon {
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 90px;
+    width: 90px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.col-md-3:hover {
+box-shadow: 5px 7px 9px -3px rgba(255,255,255,0.5);
+cursor: pointer;
+}
+
+
+/* ........ Alert Container ....... */
+
+header {
+    height: auto;
+}
+.alert {
+    background-color: #8b999b;
+}
+.company {
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+h1:after {
+    content:'';
+    background: red;
+    display: block;
+    width: 50%;
+    height: 3px;
+    margin: 10px auto;
+}
+
+h1 {
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+.container-fluid {
+    width: 40%;
+    text-align-last: center;
+    margin-top: 40px;
+}
+.container-fluid a {
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.container-offers {
+    margin-top: 100px;
+}
+  @media(max-width:1024px) {
+      .container-fluid {
+          width: auto;
+      }
+  } 
+
+  .price {
+      color: rgb(36, 127, 230);
+      letter-spacing: 1px;
+  }
+
+  /** ......... CUBE SECTION ....... **/
+
+  * {
+      box-sizing: border-box;
+  }
+
+  section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      margin-top: 50px;
+  }
+
+  section .box {
+      position: absolute;
+      top: calc(50% - 100px);
+      left: calc(50% - 100px);
+      width: 200px;
+      height: 200px;
+      transform-style: preserve-3d;
+  }
+
+  section .box div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px, -50px,150px);
+  }
+
+  section .box div span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;   
+      border: 1px; solid rgba(0,0,0,.1);
+      background: #ccc;
+  }
+  section .box div span video {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(0px);
+  }
+
+  section video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(20px);
+  }
+  section .box div span:nth-child(1) {
+      transform: rotateX(0deg) translate3d(0,0,100px);
+  }
+
+  section .box div span:nth-child(2) {
+    transform: rotateY(90deg) translate3d(0,0,-100px);
+}
+
+section .box div span:nth-child(2) video {
+    transform: rotateY(180deg);
+
+}
+
+section .box div span:nth-child(3) {
+    transform: rotateX(90deg) translate3d(0,0,100px);
+}
+
+.my-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.bark {
+    padding-left: 10px;
+}
+.footer {
+    
+    display: -webkit-inline-box;
+    margin-top: 10px;
+}
+
